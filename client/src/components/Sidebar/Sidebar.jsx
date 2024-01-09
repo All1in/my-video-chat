@@ -3,6 +3,7 @@ import { Button, TextField, Grid, Typography, Container, Paper } from '@material
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Assignment, Phone, PhoneDisabled } from '@material-ui/icons';
 import { useSidebarStyles } from "../../utils";
+import { SocketContext } from "../../context/SocketContext";
 
 const Sidebar = ({ children }) => {
     const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } = useContext(SocketContext);
