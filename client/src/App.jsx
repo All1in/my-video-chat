@@ -1,9 +1,9 @@
 import { Typography, AppBar } from '@material-ui/core';
-import { useStyles } from "./utils";
+import { AppStyles } from "./utils";
 
 
 const App = () => {
-  const classes = useStyles();
+  const classes = AppStyles();
 
   return (
       <div className={classes.wrapper}>
