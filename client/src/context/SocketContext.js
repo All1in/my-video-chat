@@ -59,7 +59,7 @@ const ContextProvider = ({ children }) => {
         });
 
         peer.on('stream', (currentStream) => {
-            userVideo.current.srcObject = currentStream;
+            userVideo.current.srcObject = currentStream.streams[0];
         });
 
         socket.on('callAccepted', (signal) => {
